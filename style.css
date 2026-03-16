@@ -8,7 +8,6 @@
     body{
     background:#0f172a;
     color:white;
-    padding-top:80px;
     }
     
     header{
@@ -24,14 +23,17 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:0 10px;
+    flex-wrap:wrap;
     }
     
     nav ul{
     display:flex;
     list-style:none;
     gap:30px;
+    flex-wrap:wrap;
     }
-    
+
     nav a{
     color:white;
     text-decoration:none;
@@ -40,6 +42,7 @@
     
     .logo{
     font-weight:600;
+    margin-right:10px;
     }
     
     .hero{
@@ -141,27 +144,4 @@
     margin-top:50px;
     }
 
-    @media (max-width:768px){
     
-    nav{
-    flex-direction:column;
-    gap:10px;
-    }
-    
-    nav ul{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-    }
-    
-    .hero{
-    padding-top:60px;
-    text-align:center;
-    justify-content:center;
-    }
-    
-    .hero-img{
-    margin-top:30px;
-    }
-    
-    }
