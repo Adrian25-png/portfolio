@@ -30,7 +30,7 @@
     nav ul{
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:25px;
     flex-wrap:wrap;
     }
 
@@ -121,6 +121,26 @@
     background:#2563eb;
     }
     
+
+    .resume{
+    padding:100px 10%;
+    text-align:center;
+    }
+    
+    .resume h2{
+    font-size:32px;
+    margin-bottom:20px;
+    }
+    
+    .resume p{
+    margin-bottom:30px;
+    }
+    
+    .resume .btn{
+    margin:10px;
+    }
+
+
     .contact{
     padding:100px 10%;
     text-align:center;
@@ -144,4 +164,60 @@
     margin-top:50px;
     }
 
+    /*reponsividade*/
+    @media (max-width:768px){
+
+
+    .resume{
+    padding:80px 20px;
+    text-align:center;
+    }
     
+    .resume .btn{
+    display:block;
+    margin:12px auto;
+    max-width:260px;
+    }
+
+    }
+
+    /*Menu de hamburguer*/
+    .menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:white;
+    }
+    
+    @media (max-width:768px){
+    
+    .menu-toggle{
+    display:block;
+    z-index:1001;
+    }
+    
+    .menu{
+    display:flex;
+    position:fixed;
+    top:0;
+    right:-250px;
+    width:150px;    
+    height:100vh;
+    background:#1e3a8a;
+    flex-direction:column;
+    align-items:center;
+    justify-content: flex-start;
+    padding-top: 70px;
+    gap:15px;
+    transition:0.4s ease;
+    }
+    
+    .menu li{
+    margin:10px 0;
+    }
+    
+    .menu.active{
+    right:0;
+    }
+    
+    }
